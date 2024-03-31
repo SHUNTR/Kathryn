@@ -1,0 +1,113 @@
+*{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+*::-webkit-scrollbar{
+  width: 12px;
+}
+*::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background: rgb(229,74,113);
+background: linear-gradient(172deg, rgba(229,74,113,1) 11%, rgba(242,116,91,1) 29%, rgba(255,54,177,1) 45%, rgba(255,148,178,1) 61%, rgba(106,30,253,1) 82%, rgba(253,70,176,1) 100%);
+}
+.container{
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-nav__list{
+  display: flex;
+  gap: 10px;
+}
+.main-header__body{
+  display: flex;
+  gap: 40px;
+  height: 80px;
+  align-items: center;
+}
+a{
+  color: black;
+}
+.main-header__logo {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.main-header a {
+  position: relative;
+}
+.main-header a::after {
+  position: absolute;
+  bottom: 0px;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  content: "";
+  transition: .3s;
+  background: rgb(229,74,113);
+  background: linear-gradient(172deg, rgba(229,74,113,1) 11%, rgba(255,54,177,1) 34%, rgba(255,148,178,1) 55%, rgba(253,70,176,1) 96%);
+}
+.main-header a:hover::after{
+  width: 100%;
+}
+.burger{
+  margin-left: auto;
+  display: none;
+}
+.what-we-do{
+  min-height: calc(437 * 2);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: white;
+}
+.what-we-do__element:first-of-type img{
+  height: 437px;
+  object-position: 50% 19.43%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto 0 0;
+
+}
+.what-we-do__block{
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  padding: 30px;
+  margin: 21px;
+  min-height: 400px;
+  width: 400px;
+  position: relative;
+}
+.what-we-do__element:last-of-type{
+display: flex;
+justify-content: center;
+  width: 100%;
+}
+.what-we-do__block:first-of-type{
+  background-color: #2530c9;
+  top: -150px;
+}
+.what-we-do__block:last-of-type{
+  background-color: #3e427e;
+  top: -300px;  
+}
+.what-we-do__title{
+  font-family: Oswald, sans-serif;
+  font-weight: lighter;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.what-we-do__text{
+  font-size: 20px;
+}
+.what-we-do__element:first-of-type{
+ height: 437px;
+ overflow: hidden;
+ object-position: 50% 19.43%;
+}
