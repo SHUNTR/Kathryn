@@ -283,12 +283,12 @@ font-weight: bold;
 }
 .consultation__text{
   color: #2530c9;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 40px;
 }
 .consultation{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   background-color: #f9c9ce
 }
 .consultation__container{
@@ -297,4 +297,97 @@ font-weight: bold;
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
+}
+
+.main-footer{
+  background: linear-gradient(90deg, #2530c9 57%,white 0);
+}
+.main-footer__list{
+  display: flex;
+  flex-direction: column;
+}
+.main-footer__block:last-of-type{
+  background-color: white;
+  color: black;
+}
+.main-footer__block:first-of-type{
+  
+}
+.main-footer__block{
+  padding: 75px 0;
+}
+.main-footer__list-item:not(:last-of-type){
+  margin-bottom: 70px
+}
+.main-footer__list-item{
+  display: flex;
+  flex-direction: column;
+}
+.main-footer__container{
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  color: white;
+}
+.main-footer__title{
+  font-weight: 300;
+    font-size: 32px;
+}
+.main-footer__text{
+  font-weight: bold;
+  font-size: 50px;
+}
+.contacts{
+  gap: 30px;
+}
+.contacts__title{
+  text-align: center;
+  color:#fc1aaf;
+  margin-bottom: 15px;
+  font-size: 32px
+}
+.contacts__text{
+  position: relative;
+  color:#000000;
+  padding-top:15px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing:1px;
+}
+.contacts__text::after{
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: calc(50% - 50px);
+  height: 5px;
+  border-radius: 10px;
+  background-color: #fd5ec838;
+  content:'';
+}
+.contacts__link{
+  text-decoration: underline;
+  transition: .15s;
+}
+.contacts__web-links{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.contacts__web-links .contacts__link{
+  height: 35px;
+  width: 35px;
+  display: block;
+}
+.contacts__link svg{
+  height: 100%;
+  width: 100%;
+}
+.contacts__link:hover svg,.contacts__link:hover path{
+  fill:#fd5ec7
+}
+.contacts__link svg,.contacts__link path{
+ transition: .2s;
+}
+.contacts__link:hover{
+  color:#fd5ec7
 }
