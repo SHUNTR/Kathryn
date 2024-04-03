@@ -170,7 +170,7 @@ width: 45%;
   font-size: 60px;
     font-weight: 700;
 }
-.about-my-doing__btn{
+.about-my-doing__btn,.consultation__btn{
   border-style: none;
   font-weight: 700;
   text-transform: uppercase;
@@ -185,7 +185,7 @@ width: 45%;
   cursor: pointer;
   transition: .3s;
 }
-.about-my-doing__btn:hover{
+.about-my-doing__btn:hover,.consultation__btn:hover{
   transform: scale(1.1,1.1);
   border-radius: 5px
 }
@@ -274,4 +274,27 @@ font-weight: bold;
 .portfolio__img:hover{
   box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2);
   transform: scale(1.05,1.05);
+}
+
+
+.consultation__btn{
+  background-color:#2530c9;
+  margin-right: 0;
+}
+.consultation__text{
+  color: #2530c9;
+  font-weight: bold;
+  font-size: 40px;
+}
+.consultation{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f9c9ce
+}
+.consultation__container{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
 }
